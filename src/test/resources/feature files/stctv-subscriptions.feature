@@ -1,93 +1,43 @@
 Feature: STCtv - Subscription packages validation
-  As a customer who wants to subscribe to STCtv
+  As a KSA customer who wants to subscribe to STCtv
   I want to check available subscription packages
   So that I can decide what is suitable for me
 
   Background: Navigate to STCtv subscription page
+    Given customer navigates tp STVtv subscription page
 
-  Scenario: KSA subscription packages validation
-    Given customer navigates to KSA subscription page
-    When customer checks package name
-    Then verify package name
+  Scenario Outline: KSA subscription packages validation
+    When customer navigates to "KSA" subscription page
+    Then verify package "<name>"
+    And verify package "<name>" "<price>"
+    And verify package <"name"> currency is "SAR"
 
-    When customer checks package price
-    Then verify package price
+    Examples:
+    | name    | price |
+    | lite    | 15    |
+    | classic | 25    |
+    | premium | 60    |
 
-    When customer checks package currency
-    Then verify package currency
+  Scenario Outline: Kuwait subscription packages validation
+    When customer navigates to "Kuwait" subscription page
+    Then verify package "<name>"
+    And verify package "<name>" "<price>"
+    And verify package <"name"> currency is "KWD"
 
-    When customer checks package name
-    Then verify package name
+    Examples:
+      | name    | price |
+      | lite    | 1.2   |
+      | classic | 2.5   |
+      | premium | 4.8   |
 
-    When customer checks package price
-    Then verify package price
+  Scenario Outline: Bahrain subscription packages validation
+    When customer navigates to "Bahrain" subscription page
+    Then verify package "<name>"
+    And verify package "<name>" "<price>"
+    And verify package <"name"> currency is "BHD"
 
-    When customer checks package currency
-    Then verify package currency
-
-    When customer checks package name
-    Then verify package name
-
-    When customer checks package price
-    Then verify package price
-
-    When customer checks package currency
-    Then verify package currency
-
-  Scenario: Bahrain subscription packages validation
-    Given customer navigates to Kuwait subscription page
-    When customer checks package name
-    Then verify package name
-
-    When customer checks package price
-    Then verify package price
-
-    When customer checks package currency
-    Then verify package currency
-
-    When customer checks package name
-    Then verify package name
-
-    When customer checks package price
-    Then verify package price
-
-    When customer checks package currency
-    Then verify package currency
-
-    When customer checks package name
-    Then verify package name
-
-    When customer checks package price
-    Then verify package price
-
-    When customer checks package currency
-    Then verify package currency
-
-  Scenario: Bahrain subscription packages validation
-    Given customer navigates to Bahrain subscription page
-    When customer checks package name
-    Then verify package name
-
-    When customer checks package price
-    Then verify package price
-
-    When customer checks package currency
-    Then verify package currency
-
-    When customer checks package name
-    Then verify package name
-
-    When customer checks package price
-    Then verify package price
-
-    When customer checks package currency
-    Then verify package currency
-
-    When customer checks package name
-    Then verify package name
-
-    When customer checks package price
-    Then verify package price
-
-    When customer checks package currency
-    Then verify package currency
+    Examples:
+      | name    | price |
+      | lite    | 2     |
+      | classic | 3     |
+      | premium | 6     |
