@@ -1,16 +1,16 @@
 Feature: STCtv - Subscription packages validation
-  As a KSA customer who wants to subscribe to STCtv
+  As a customer who wants to subscribe to STCtv
   I want to check available subscription packages
   So that I can decide what is suitable for me
 
   Background: Navigate to STCtv subscription page
-    Given customer navigates tp STVtv subscription page
+    Given customer navigates to STCtv subscription page
 
   Scenario Outline: KSA subscription packages validation
     When customer navigates to "KSA" subscription page
     Then verify package "<name>"
     And verify package "<name>" "<price>"
-    And verify package <"name"> currency is "SAR"
+    And verify package "<name>" currency is "SAR"
 
     Examples:
     | name    | price |
@@ -22,7 +22,7 @@ Feature: STCtv - Subscription packages validation
     When customer navigates to "Kuwait" subscription page
     Then verify package "<name>"
     And verify package "<name>" "<price>"
-    And verify package <"name"> currency is "KWD"
+    And verify package "<name>" currency is "KWD"
 
     Examples:
       | name    | price |
@@ -34,7 +34,7 @@ Feature: STCtv - Subscription packages validation
     When customer navigates to "Bahrain" subscription page
     Then verify package "<name>"
     And verify package "<name>" "<price>"
-    And verify package <"name"> currency is "BHD"
+    And verify package "<name>" currency is "BHD"
 
     Examples:
       | name    | price |
