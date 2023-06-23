@@ -11,43 +11,38 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 public class StepDefinitions {
-
     private WebDriver driver;
-    private String baseURL;
-    @Given("customer navigates to STCtv subscription page")
-    public void customerNavigatesToSTCtvSubscriptionPage() {
+
+    @Given("customer navigates to {string} subscription page")
+    public void customerNavigatesToSubscriptionPage(String country) {
+        String baseURL = "https://subscribe.stctv.com/";
+        String countryURL;
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        baseURL = "https://subscribe.stctv.com/";
-    }
-
-    @When("customer navigates to {string} subscription page")
-    public void customerNavigatesToSubscriptionPage(String country) {
-        String countryURL;
         switch (country) {
             case "KSA" -> {
                 countryURL = "sa-en";
-                driver.get(baseURL+countryURL);
+                driver.get(baseURL +countryURL);
             }
             case "Bahrain" -> {
                 countryURL = "bh-en";
-                driver.get(baseURL+countryURL);
+                driver.get(baseURL +countryURL);
             }
             case "Kuwait" -> {
                 countryURL = "kw-en";
-                driver.get(baseURL+countryURL);
+                driver.get(baseURL +countryURL);
             }
         }
     }
 
-    @Then("verify package {string}")
+    @When("verify package {string}")
     public void verifyPackage(String name) {
         String id = "name-"+name;
         String packageName = driver.findElement(By.id(id)).getText();
         Assert.assertTrue(packageName.equalsIgnoreCase(name));
     }
 
-    @And("verify package {string} {string}")
+    @Then("verify package {string} {string}")
     public void verifyPackage(String name, String price) {
         String cssSelector = "#currency-"+name+" > b";
         Assert.assertEquals(driver.findElement(By.cssSelector(cssSelector)).getText(),price);
