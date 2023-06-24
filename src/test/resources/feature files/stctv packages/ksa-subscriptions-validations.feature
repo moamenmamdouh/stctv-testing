@@ -1,5 +1,5 @@
 Feature: STCtv - Subscription packages validation
-  As a customer who wants to subscribe to STCtv
+  As a KSA customer who wants to subscribe to STCtv
   I want to check available subscription packages
   So that I can decide what is suitable for me
 
