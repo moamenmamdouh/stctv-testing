@@ -1,0 +1,38 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1524406","Test Case","Rates || Validate that required request parameters are present and correctly format",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Enter valid and correct request data in body ","The sample of request
+ {
+",,,
+,,,"2","Call API Rates roaming charges
+ @URLPathOfService","The response should be returned success code with correct message 
+{
+ Status: 200
+ SMSTag: ,String
+ Charges object :,  ( It will display with values in case SMStag = Standard ONLY ) 
+ RoW:Boolean
+ }",,,
+"1532299","Test Case","Rates || Validate the API response || Incorrect Data Values",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Design"
+,,,"1","Enter a valid request in body 
+except @country field 
+","
+",,,
+,,,"2","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: error code
+ Error: error message
+ }
+",,,
+,,,"3","Enter a valid request in body 
+except @TariffId field
+","
+",,,
+,,,"4","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: error code
+ Error: error message
+ }
+",,,

@@ -1,0 +1,37 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1532768","Test Case","Identify || PAYM || Verify Tariff ID for CTNs with product IDs pre CTR17c and agreement date before 11 August 2021",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Ready"
+,,,"1","Send a get request for identify API @URLPathOfService using a valid @ctn 
+@UserType
+","
+",,,
+,,,"2","Assert response code and tariff ID value in the received response
+","The response should be returned 
+{
+Tariff ID = coretariff_A
+",,,
+,,,"3","Test Script on postman
+pm.test(""Your test name"", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.ctnDetails.tariffID).to.eql(""CORETARIFF_A"");
+});
+","
+",,,
+"1532770","Test Case","Identify || PAYM || Verify Tariff ID for CTNs with product IDs pre CTR17c and agreement date on 11 August 2021 or later",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Ready"
+,,,"1","Send a get request for identify API @URLPathOfService using a valid @ctn 
+","
+",,,
+,,,"2","Assert response code and tariff ID value in the received response
+","The response should be returned 
+{
+Tariff ID = coretariff_A
+Response code = 200
+}
+
+",,,
+,,,"3","Test Script on postman
+pm.test(""Your test name"", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.ctnDetails.tariffID).to.eql(""CORETARIFF_A"");
+});
+","
+",,,

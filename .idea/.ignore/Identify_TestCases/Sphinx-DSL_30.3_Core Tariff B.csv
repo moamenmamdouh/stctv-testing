@@ -1,0 +1,33 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1532776","Test Case","Identify || Verify Tariff ID for CTNs with product ID CTR17c and agreement date before 11 August 2021",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Design"
+,,,"1","Send a get request for identify API @URLPathOfService using a valid @ctn 
+","
+",,,
+,,,"2","Assert response code and tariff ID value in the received response
+","Tariff ID = coretariff_B
+Response code = 200
+",,,
+"1532777","Test Case","Identify || Verify Tariff ID for CTNs with product ID CTR17c and agreement date on 11 August 2021 or later",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Ready"
+,,,"1","Send a get request for identify API @URLPathOfService using a valid @ctn 
+","
+",,,
+,,,"2","Assert response code and tariff ID value in the received response
+","Tariff ID = coretariff_B
+Response code = 200
+",,,
+"1532790","Test Case","Identify || Verify Tariff ID for CTNs with product IDs post CTR17c and agreement date before 11 August 2021",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Design"
+,,,"1","Send a get request for identify API @URLPathOfService using a valid @ctn 
+","
+",,,
+,,,"2","Assert response code and tariff ID value in the received response
+","Tariff ID = coretariff_B
+Response code = 200
+",,,
+"1532791","Test Case","Identify || Verify Tariff ID for CTNs with product IDs post CTR17c and agreement date on 11 August 2021 or later",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Design"
+,,,"1","Send a get request for identify API @URLPathOfService using a valid @ctn 
+","
+",,,
+,,,"2","Assert response code and tariff ID value in the received response
+","Tariff ID = coretariff_B
+Response code = 200
+",,,

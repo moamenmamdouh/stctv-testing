@@ -1,0 +1,145 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1532283","Test Case","Rates || Core Tariff B || PAYM/PAG || ROAMPASS8ZONEB",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Passed"
+,,,"1","Preconditions: You have to choose the country which is in Zone B
+""Zone2022"": ""B"",(From attached file)","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_B"",
+- RoamPass8: TRUE
+- @country = ","The sample of request
+ {
+",,,
+,,,"3","Call API Rates roaming charges
+@URL
+","{
+    ""smsTag"": ""ROAMPASS8ZONEB"",    ""row"": false
+}
+",,,
+"1532290","Test Case","Rates || Core Tariff B || PAYM/PAYG || ROAMPASS15ZONEB ",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Zone B
+""Zone2022"": ""B"",(From attached file)","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_B"",
+- RoamPass15: TRUE
+- @country = ","The sample of request
+ {
+",,,
+,,,"3","Call API Rates roaming charges
+@URL
+","{
+    ""smsTag"": ""ROAMPASS15ZONEB"",    ""row"": false
+}
+",,,
+"1533927","Test Case","Rates || Core Tariff B || PAYM/PAG || VGRPLUS",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Zone B
+""Zone2022"": ""B"",
+""RedAddtional"": ""Yes""(From attached file)","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_B"",
+- vgrPlus: TRUE
+- @country = ","The sample of request
+ {
+""country"" : ""France"",""vgr"" : false,""vgrPlus"" : true,""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : false,""4xtra"" : false}",,,
+,,,"3","Call API Rates roaming charges
+@URL
+","{
+    ""smsTag"": ""VGRPLUS"",",,,
+"1533943","Test Case","Rates || Core Tariff B || PAYM/PAYG || VGRZONEB",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Zone B
+""Zone2022"": ""B"",(From attached file)","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_B"",
+- VGR: TRUE
+- FourXtra: TRUE
+- @country = ","The sample of request
+ {
+",,,
+,,,"3","Call API Rates roaming charges
+@URL
+","{
+    ""smsTag"": ""VGRZONEB"",",,,
+"1534360","Test Case","Rates || Core Tariff B || PAYM/PAG || VGRPLUSZONEB",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Zone B
+","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_B"",
+- vgrPlus: TRUE
+- @country = ","The sample of request
+ {
+",,,
+,,,"3","Call API Rates roaming charges
+@URL
+","{
+    ""smsTag"": ""VGRPLUSZONEB"",",,,
+"1534401","Test Case","Rates || Core Tariff B || PAYM/PAG || VGRPLUSZONEC",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Zone B
+","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_B"",
+- vgrPlus: TRUE
+- @country = ","The sample of request
+ {
+""country"" : """",""vgr"" : false,""vgrPlus"" : true,""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : false,""4xtra"" : false}",,,
+,,,"3","Call API Rates roaming charges
+@URL
+","{
+    ""smsTag"": ""VGRPLUSZONEC"",",,,
+"1534456","Test Case","Rates || Core Tariff B || PAYM/PAYG || Rest of World Zone 4 || DATAUNAVAILABLE",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Design"
+,,,"1","Preconditions: You have to choose the country which is in
+","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_B"",
+- @country = ","The sample of request
+ {
+""country"" : """",""vgr"" : false,""vgrPlus"" : false,""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : fasle,""4xtra"" : false}",,,
+,,,"3","Call API Rates roaming charges
+@URL
+","{
+    ""smsTag"": ""DATAUNAVAILABLE"",
+    ""charges"": {
+        ""callOutbound"": 240,
+        ""callOutboundFormatted"": ""2.40"",
+        ""sms"": 60,
+        ""smsFormatted"": ""0.60"",
+        ""mms"": 66,
+        ""mmsFormatted"": ""0.66"",
+        ""callInbound"": 180,
+        ""callInboundFormatted"": ""1.80""
+    },
+    ""row"": true
+}
+",,,
+"1534480","Test Case","Rates || Core Tariff B || PAYM/PAYG || Rest of World Zone 3 || DATAUNAVAILABLE ",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Design"
+,,,"1","Preconditions: You have to choose the country which is in
+ ""voiceOnly"": ""Yes""
+""Zone2022"": ""RoW"",
+""Zone"": ""Rest of World Zone 3""(From attached file)","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_B"",
+- @country = ","The sample of request
+ {
+""country"" : """",""vgr"" : false,""vgrPlus"" : false,""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : fasle,""4xtra"" : false}",,,
+,,,"3","Call API Rates roaming charges
+@URL
+","{
+    ""smsTag"": ""DATAUNAVAILABLE"",
+    ""charges"": {
+        ""callOutbound"": 240,
+        ""callOutboundFormatted"": ""2.40"",
+        ""sms"": 60,
+        ""smsFormatted"": ""0.60"",
+        ""mms"": 66,
+        ""mmsFormatted"": ""0.66"",
+        ""callInbound"": 156,
+        ""callInboundFormatted"": ""1.56""
+    },
+    ""row"": true
+}
+",,,

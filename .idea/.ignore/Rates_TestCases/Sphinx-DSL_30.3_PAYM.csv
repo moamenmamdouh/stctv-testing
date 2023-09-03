@@ -1,0 +1,167 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1531459","Test Case","Rates || Core Tariff A || PAYM || Roam Free",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Passed"
+,,,"1","Preconditions: You have to choose the country which is in Roam Free
+","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYM
+  @URL
+","The API Response should be returned 
+{
+    ""smsTag"": ""ROAMFREE"",
+    ""row"": false
+}
+",,,
+"1531472","Test Case","Rates || Core Tariff A || PAYM || Roam-further",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Roam Free
+""isRoamFurther"": ""Yes""(From attached file)  ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYM
+  @URL
+","The API Response should be returned 
+{
+
+    ""smsTag"": ""ROAMFURTHER"",
+    ""row"": false
+
+}
+",,,
+"1531538","Test Case","Rates || Core Tariff A || PAYM || RoW Flag is True || Rest of World Zone 1 ",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Rest of World Zone 1 ""isRoamFurther"": ""No"",","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYM
+  @URL
+","The API response should be returned 
+{
+ 
+  ""smsTag"" : ""STANDARD"",
+   ""charges"" : {
+    ""callOutbound"" : 
+    ""callOutboundFormatted"" : ,
+     ""sms"" : ,
+     ""smsFormatted"" : 
+     ""mms"" :
+    ""mmsFormatted"" : ,
+    ""data"" : 
+   ""dataFormatted"" : ,
+   ""callInbound"" : 
+   ""callInboundFormatted"" :
+  },
+   ""row"" : true
+ }
+",,,
+"1531642","Test Case","Rates || Core Tariff A || PAYM || RoW Flag is True || Rest of World Zone 2",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Design"
+,,,"1","Preconditions: You have to choose the country which is in Rest of World Zone 2 ""isRoamFurther"": ""No"", ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYM
+  @URL
+","The API response should be returned 
+{
+ 
+  ""smsTag"" : ""STANDARD"",
+   ""charges"" : {
+    ""callOutbound"" : 
+    ""callOutboundFormatted"" : ,
+     ""sms"" : ,
+     ""smsFormatted"" : 
+     ""mms"" :
+    ""mmsFormatted"" : ,
+    ""data"" : 
+   ""dataFormatted"" : ,
+   ""callInbound"" : 
+   ""callInboundFormatted"" :
+  },
+   ""row"" : true
+ }
+",,,
+"1531984","Test Case","Rates || Core Tariff A || PAYM || RoW Flag is True || Rest of World Zone 3",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Rest of World Zone 3 ""isRoamFurther"": ""No"", ""Zone"": ""Rest of World Zone 3"",""Zone2022"": ""RoW"",(From attached file)  ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYM
+  @URL
+","The API response should be returned 
+{
+ 
+  ""smsTag"" : ""STANDARD"",
+   ""charges"" : {
+    ""callOutbound"" : 
+    ""callOutboundFormatted"" : ,
+     ""sms"" : ,
+     ""smsFormatted"" : 
+     ""mms"" :
+    ""mmsFormatted"" : ,
+    ""data"" : 
+   ""dataFormatted"" : ,
+   ""callInbound"" : 
+   ""callInboundFormatted"" :
+  },
+   ""row"" : true
+ }
+",,,
+"1532197","Test Case","Rates || Core Tariff A || PAYM || RoW Flag is True || Rest of World Zone 4",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Rest of World Zone 4 ""isRoamFurther"": ""No"", ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYM
+  @URL
+","The API response should be returned 
+{
+ 
+  ""smsTag"" : ""STANDARD"",
+   ""charges"" : {
+    ""callOutbound"" : 
+    ""callOutboundFormatted"" : ,
+     ""sms"" : ,
+     ""smsFormatted"" : 
+     ""mms"" :
+    ""mmsFormatted"" : ,
+    ""data"" : 
+   ""dataFormatted"" : ,
+   ""callInbound"" : 
+   ""callInboundFormatted"" :
+  },
+   ""row"" : true
+ }
+",,,
+"1532215","Test Case","Rates || Core Tariff A || PAYM || Unavailable",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Unavailable
+","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYM
+  @URL
+","The API Response should be returned 
+
+
+{
+
+  ""smsTag"" : ""UNAVAILABLE"",
+  ""row"" : false
+
+}
+",,,

@@ -1,0 +1,18 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1532295","Test Case","Identify || Validate response for an authorized request with all valid values",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Ready"
+,,,"1","Enter valid and correct request data in body ","{""context"":{    ""sessionId"":""u90r8tuegw-r908"",    ""intent"":""test-intent""    }}",,,
+,,,"2","Call Identify API with a valid @ctn  
+ @URLPathOfService","The response should be returned success code with correct message 
+{
+ Status: 200
+CTN details object.
+""Tariff id key inside ctn details object""
+auth details object. ""Could be empty""
+ }",,,
+"1532632","Test Case","Identify || Validate response for invalid CTNs parameter value",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Ready"
+,,,"1","Call identify API @URLPathOfService using an invalid @ctn value","
+  Error message = Msisdn is not valid.
+Response code = 400 ""Bad Request""",,,
+"1532635","Test Case","Identify || Validate response for an unauthorized request",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Ready"
+,,,"1","Call identify API @URLPathOfService using a valid @ctn value but no authorization permission.","
+",,,

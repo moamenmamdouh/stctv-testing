@@ -1,0 +1,29 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1535645","Test Case","Identify || Validate the API Response || PAYG",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Send a get request for identify API @URLPathOfService using a valid @ctn
+","
+",,,
+,,,"2","Assert response code and tariff ID value in the received response
+","The response should be returned
+{
+ ""tariffID"": ""NA""
+",,,
+"1535647","Test Case","Identify || Validate the API Response || Heritage",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Send a get request for identify API @URLPathOfService using a valid @ctn
+","
+",,,
+,,,"2","Assert response code and tariff ID value in the received response
+","The response should be returned
+{
+""migrationstatus"": ""NOTMIGRATED"",
+ ""tariffID"": Not Display
+ }",,,
+"1536716","Test Case","Identify || Validate the API Response || PAYM-SME",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Send a get request for identify API @URLPathOfService using a valid @ctn
+","
+",,,
+,,,"2","Assert response code and tariff ID value in the received response
+","The response should be returned
+{
+ ""tariffID"": """"
+",,,

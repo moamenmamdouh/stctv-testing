@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "c9283930-1fef-4bed-ade8-2fb73c53fc9b",
+		"name": "ds-ivr-products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4131763"
+	},
+	"item": [
+		{
+			"name": "1.4.13",
+			"item": [
+				{
+					"name": "msisdn/{msisdn}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{tomcat8-ds-ivr-dev}}/ds-ivr-products-webapi-1.4.13/products/installed/msisdn/07867801104",
+							"host": [
+								"{{tomcat8-ds-ivr-dev}}"
+							],
+							"path": [
+								"ds-ivr-products-webapi-1.4.13",
+								"products",
+								"installed",
+								"msisdn",
+								"07867801104"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fixedline/{fixedline}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{tomcat8-ds-ivr-dev}}/ds-ivr-products-webapi-1.4.13/products/installed/fixedline/01162931303",
+							"host": [
+								"{{tomcat8-ds-ivr-dev}}"
+							],
+							"path": [
+								"ds-ivr-products-webapi-1.4.13",
+								"products",
+								"installed",
+								"fixedline",
+								"01162931303"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/{account}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{tomcat8-ds-ivr-dev}}/ds-ivr-products-webapi-1.4.13/products/installed/account/1234567",
+							"host": [
+								"{{tomcat8-ds-ivr-dev}}"
+							],
+							"path": [
+								"ds-ivr-products-webapi-1.4.13",
+								"products",
+								"installed",
+								"account",
+								"1234567"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "1.4.14",
+			"item": [
+				{
+					"name": "msisdn/{msisdn}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{tomcat8-ds-ivr-dev}}/ds-ivr-products-webapi-1.4.14/products/installed/msisdn/07867801104",
+							"host": [
+								"{{tomcat8-ds-ivr-dev}}"
+							],
+							"path": [
+								"ds-ivr-products-webapi-1.4.14",
+								"products",
+								"installed",
+								"msisdn",
+								"07867801104"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fixedline/{fixedline}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{tomcat8-ds-ivr-dev}}/ds-ivr-products-webapi-1.4.14/products/installed/fixedline/01162931303",
+							"host": [
+								"{{tomcat8-ds-ivr-dev}}"
+							],
+							"path": [
+								"ds-ivr-products-webapi-1.4.14",
+								"products",
+								"installed",
+								"fixedline",
+								"01162931303"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "account/{account}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{tomcat8-ds-ivr-dev}}/ds-ivr-products-webapi-1.4.14/products/installed/account/1234567",
+							"host": [
+								"{{tomcat8-ds-ivr-dev}}"
+							],
+							"path": [
+								"ds-ivr-products-webapi-1.4.14",
+								"products",
+								"installed",
+								"account",
+								"1234567"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "tomcat8-ds-ivr-dev",
+			"value": "http://aepksmxaod004-vlan400.vfl.vodafone:8081",
+			"type": "string"
+		}
+	]
+}

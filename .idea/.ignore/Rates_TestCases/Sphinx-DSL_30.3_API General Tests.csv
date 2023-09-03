@@ -1,0 +1,158 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1521369","Test Case","Rates || Validate the API response || Missing Parameter",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Remove parameter ""@MandatoryParameter"" From Request body","{
+",,,
+,,,"2","Call API Rates roaming charges
+ @URLPathOfService","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }",,,
+,,,"3","Remove parameter ""@OptionalParameter"" From Request body
+","
+",,,
+,,,"4","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned success message, including the correct zone , and a 200 status code 
+",,,
+"1524348","Test Case","Rates || Validate the API response || Send null values",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Modify parameter ""@MandatoryParameter"" From Request body with null value ","The sample of request
+ {
+",,,
+,,,"2","Call API Rates roaming charges
+ @URLPathOfService","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"3","Remove parameter ""@OptionalParameter"" From Request body
+","
+",,,
+,,,"4","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned success message, including the correct zone , and a 200 status code 
+",,,
+"1524370","Test Case","Rates || Validate the API response || Invalid Data types",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Edit value of parameter ""@Country"" with invalid value
+","The sample of request
+ {
+""country"" : 1,""vgr"" : false,""vgrPlus"" : false,""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : false,""4xtra"" : false}",,,
+,,,"2","Call API Rates roaming charges
+ @URLPathOfService","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"3","Edit value of parameter ""@tariffId"" with invalid value From Request body
+","The sample of request
+ {
+""country"" : ""France"",""vgr"" : false,""vgrPlus"" : false,""vfBlack"" : false, ""tariffId"": false,""roamPass8"" : false, ""roamPass15"" : false,""4xtra"" : false}",,,
+,,,"4","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"5","Edit value of parameter ""@vgrPlus"" with invalid value
+","The sample of request
+ {
+""country"" : ""France"",""vgr"" : false,""vgrPlus"" : ""test"",""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : false,""4xtra"" : false}",,,
+,,,"6","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"7","Edit value of parameter ""@vgr"" with invalid value 
+","The sample of request
+ {
+""country"" : ""France"",""vgr"" : ""test"",""vgrPlus"" : false,""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : false,""4xtra"" : false}",,,
+,,,"8","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"9","Edit value of parameter ""@vgrBlack"" with invalid value From Request body
+","The sample of request
+ {
+""country"" : ""France"",""vgr"" : false,""vgrPlus"" : false,""vfBlack"" : ""test"", ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : false,""4xtra"" : false}",,,
+,,,"10","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"11","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"12","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"13","Edit value of parameter ""@roamPass8"" with invalid value
+","The sample of request
+ {
+""country"" : ""France"",""vgr"" : false,""vgrPlus"" : false,""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : ""test"", ""roamPass15"" : false,""4xtra"" : false}",,,
+,,,"14","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"15","Edit value of parameter ""@roamPass15"" with invalid value
+","The sample of request
+ {
+""country"" : ""France"",""vgr"" : false,""vgrPlus"" : false,""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : ""test"",""4xtra"" : false}",,,
+,,,"16","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"17","Edit value of parameter ""@4xtra"" with invalid value
+","The sample of request
+ {
+""country"" : ""France"",""vgr"" : false,""vgrPlus"" : false,""vfBlack"" : false, ""tariffId"": ""CORETARIFF_B"",""roamPass8"" : false, ""roamPass15"" : false,""4xtra"" : ""test""}",,,
+,,,"18","Call API Rates roaming charges
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+"1524372","Test Case","Rates || Validate the API response || Incorrect URL Path ",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Edit value of URL path with incorrect value
+@URLPathOfService
+","
+",,,
+,,,"2","Click on Send button
+","The response should be returned error code with descriptive message 
+{
+ Status: 404
+ Error: Not Found
+ }",,,

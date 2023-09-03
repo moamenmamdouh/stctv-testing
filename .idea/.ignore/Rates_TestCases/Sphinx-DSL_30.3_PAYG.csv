@@ -1,0 +1,159 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1531463","Test Case","Rates || Core Tariff A || PAYG || Roam Free",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Passed"
+,,,"1","Preconditions: You have to choose the country which is in Roam Free
+""Zone"": ""Roam-free""(From attached file)  ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYG
+  @URL
+","The API Response should be returned 
+{
+    ""smsTag"": ""ROAMFREE"",
+    ""row"": false
+}
+",,,
+"1531552","Test Case","Rates || Core Tariff A || PAYG || RoW Flag is True || Rest of World Zone 1 ",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Rest of World Zone 1 ""isRoamFurther"": ""No"",""Zone"": ""Rest of World Zone 1"",""Zone2022"": ""RoW"",(From attached file)  ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYG
+  @URL
+","The API response should be returned 
+{
+ 
+  ""smsTag"" : ""STANDARD"",
+   ""charges"" : {
+    ""callOutbound"" : 
+    ""callOutboundFormatted"" : ,
+     ""sms"" : ,
+     ""smsFormatted"" : 
+     ""mms"" :
+    ""mmsFormatted"" : ,
+    ""data"" : 
+   ""dataFormatted"" : ,
+   ""callInbound"" : 
+   ""callInboundFormatted"" :
+  },
+   ""row"" : true
+ }
+And must include the 
+values ​​below
+ {      ""Zone"": ""Rest of World Zone 1"",      ""Customer"": ""payg"",      ""Call:Roam-free"": ""100"",      ""Call:Rest of World Zone 1"": ""60"",      ""Call:Rest of World Zone 2"": ""150"",      ""Call:Rest of World Zone 3"": ""150"",      ""Call:Rest of World Zone 4"": ""150"",      ""Call:UK"": ""60"",      ""ReceiveCall"": ""36"",      ""SendSMSUK"": ""8"",      ""SendSMSRoamFree"": ""8"",      ""SendSMSRoW"": ""8"",      ""DataMB"": ""12"",      ""SendMMS"": ""66"",      ""MBBCharge"": ""2500"",      ""MBBPack"": ""2500"",    },",,,
+"1531656","Test Case","Rates || Core Tariff A || PAYG || RoW Flag is True || Rest of World Zone 2",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Rest of World Zone 2 ""isRoamFurther"": ""No"", ""Zone"": ""Rest of World Zone 2"",""Zone2022"": ""RoW"",(From attached file)  ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYG
+  @URL
+","The API response should be returned 
+{
+ 
+  ""smsTag"" : ""STANDARD"",
+   ""charges"" : {
+    ""callOutbound"" : 
+    ""callOutboundFormatted"" : ,
+     ""sms"" : ,
+     ""smsFormatted"" : 
+     ""mms"" :
+    ""mmsFormatted"" : ,
+    ""data"" : 
+   ""dataFormatted"" : ,
+   ""callInbound"" : 
+   ""callInboundFormatted"" :
+  },
+   ""row"" : true
+ }
+And must include the 
+values ​​below
+   {      ""Zone"": ""Rest of World Zone 2"",      ""Customer"": ""payg"",      ""Call:Roam-free"": ""120"",      ""Call:Rest of World Zone 1"": ""150"",      ""Call:Rest of World Zone 2"": ""120"",      ""Call:Rest of World Zone 3"": ""150"",      ""Call:Rest of World Zone 4"": ""150"",      ""Call:UK"": ""120"",      ""ReceiveCall"": ""72"",      ""SendSMSUK"": ""30"",      ""SendSMSRoamFree"": ""30"",      ""SendSMSRoW"": ""30"",      ""DataMB"": ""60"",      ""SendMMS"": ""66"",      ""MBBCharge"": ""2500"",      ""MBBPack"": ""2500"",      ""ZoneLink"": ""http://www.vodafone.co.uk/explore/costs/travelling-abroad/global-roaming/index.htm""    },
+",,,
+"1532184","Test Case","Rates || Core Tariff A || PAYG || RoW Flag is True || Rest of World Zone 3",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Rest of World Zone 3 ""isRoamFurther"": ""No"", ""Zone"": ""Rest of World Zone 3"",""Zone2022"": ""RoW"",(From attached file)  ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYG
+  @URL
+","The API response should be returned 
+{
+ 
+  ""smsTag"" : ""STANDARD"",
+   ""charges"" : {
+    ""callOutbound"" : 
+    ""callOutboundFormatted"" : ,
+     ""sms"" : ,
+     ""smsFormatted"" : 
+     ""mms"" :
+    ""mmsFormatted"" : ,
+    ""data"" : 
+   ""dataFormatted"" : ,
+   ""callInbound"" : 
+   ""callInboundFormatted"" :
+  },
+   ""row"" : true
+ }
+And must include the 
+values ​​below
+  {      ""Zone"": ""Rest of World Zone 3"",      ""Customer"": ""payg"",      ""Call:Roam-free"": ""240"",      ""Call:Rest of World Zone 1"": ""240"",      ""Call:Rest of World Zone 2"": ""240"",      ""Call:Rest of World Zone 3"": ""240"",      ""Call:Rest of World Zone 4"": ""240"",      ""Call:UK"": ""240"",      ""ReceiveCall"": ""156"",      ""SendSMSUK"": ""60"",      ""SendSMSRoamFree"": ""60"",      ""SendSMSRoW"": ""60"",      ""DataMB"": ""180"",      ""SendMMS"": ""66"",      ""MBBCharge"": ""2500"",      ""MBBPack"": ""2500"",      ""ZoneLink"": ""http://www.vodafone.co.uk/explore/costs/travelling-abroad/global-roaming/index.htm""    },
+",,,
+"1532203","Test Case","Rates || Core Tariff A || PAYG || RoW Flag is True || Rest of World Zone 4",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Ready"
+,,,"1","Preconditions: You have to choose the country which is in Rest of World Zone 4 ""isRoamFurther"": ""No"", ""Zone"": ""Rest of World Zone 4"",""Zone2022"": ""RoW"",(From attached file)  ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYG
+  @URL
+","The API response should be returned 
+{
+ 
+  ""smsTag"" : ""STANDARD"",
+   ""charges"" : {
+    ""callOutbound"" : 
+    ""callOutboundFormatted"" : ,
+     ""sms"" : ,
+     ""smsFormatted"" : 
+     ""mms"" :
+    ""mmsFormatted"" : ,
+    ""data"" : 
+   ""dataFormatted"" : ,
+   ""callInbound"" : 
+   ""callInboundFormatted"" :
+  },
+   ""row"" : true
+ }
+And must include the 
+values ​​below
+  {      ""Zone"": ""Rest of World Zone 4"",      ""Customer"": ""paym"",      ""Call:Roam-free"": ""240"",      ""Call:Rest of World Zone 1"": ""240"",      ""Call:Rest of World Zone 2"": ""240"",      ""Call:Rest of World Zone 3"": ""240"",      ""Call:Rest of World Zone 4"": ""240"",      ""Call:UK"": ""240"",      ""ReceiveCall"": ""180"",      ""SendSMSUK"": ""60"",      ""SendSMSRoamFree"": ""60"",      ""SendSMSRoW"": ""60"",      ""DataMB"": ""720"",      ""SendMMS"": ""66"",      ""MBBCharge"": ""2500"",      ""MBBPack"": ""2500"",      ""ZoneLink"": ""https://support.vodafone.co.uk/Using-our-network/Going-and-calling-abroad/Using-your-device-abroad/63730691/Which-destinations-are-included-in-our-Rest-of-World-Zones.htm""    },",,,
+"1532228","Test Case","Rates || Core Tariff A || PAYG || Unavailable",,,,"VF UK IT - CX and DC\Sphinx","Radwa Desouky <radwa.desouky@vodafone.com>","Passed"
+,,,"1","Preconditions: You have to choose the country which is in Unavailable
+""Zone"": ""Unavailable"",(From attached file)  ","
+",,,
+,,,"2","Enter a valid request in the body and change these values
+- tariffId = ""CORETARIFF_A"",
+- @country = ","
+",,,
+,,,"3","Call API Rates roaming charges PAYG
+  @URL
+","The API Response should be returned 
+
+
+{
+
+  ""smsTag"" : ""PAYGUNAVAILABLE"",
+  ""row"" : false
+
+}
+",,,

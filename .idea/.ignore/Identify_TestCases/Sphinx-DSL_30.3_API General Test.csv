@@ -1,0 +1,40 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+"1531936","Test Case","Identify || Validate the API response || Missing Parameter",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Ready"
+,,,"1","Remove @MandatoryParameter from Request body.","
+",,,
+,,,"2"," Call Identify API @URLPathOfService","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }",,,
+"1531938","Test Case","Identify || Validate the API response || Invalid Data types",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Ready"
+,,,"1","Edit value of parameter ""@sessionId"" with invalid value
+","
+",,,
+,,,"2","Call Identify API
+ @URLPathOfService","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+,,,"3","Edit value of parameter ""@intent"" with invalid value","
+",,,
+,,,"4","Call Identify API
+ @URLPathOfService
+","The response should be returned error code with descriptive message 
+{
+ Status: 400
+ Error: Bad Request
+ }
+",,,
+"1531939","Test Case","Identify || Validate the API response || Incorrect URL Path ",,,,"VF UK IT - CX and DC\Sphinx","Moamen Abdouh <moamen.abdouh@vodafone.com>","Ready"
+,,,"1","Edit value of URL path with incorrect value
+","
+",,,
+,,,"2","Call Identify API
+ @URLPathOfService","The response should be returned error code with descriptive message 
+{
+ Status: 404
+ Error: Not Found
+ }",,,

@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "166d495c-9b9e-4125-adb0-a013c63cfe6b",
+		"name": "ds-cdm-aggregator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4131763"
+	},
+	"item": [
+		{
+			"name": "1.0.18",
+			"item": [
+				{
+					"name": "msisdn/{msisdn}",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"sessionId\": \"u90r8tuegw-r908\",\n        \"channel\": \"TOBI\",\n        \"intent\": \"test-intent\",\n        \"dataRequired\": true\n    },\n    \"data\": {\n        \"msisdn\": \"447867789338\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{tomcat8-ds-tobi-dev}}/ds-cdm-aggregator-webapi-1.0.18/aggregate/cdm/msisdn/447867789338",
+							"host": [
+								"{{tomcat8-ds-tobi-dev}}"
+							],
+							"path": [
+								"ds-cdm-aggregator-webapi-1.0.18",
+								"aggregate",
+								"cdm",
+								"msisdn",
+								"447867789338"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accno/{accno}",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"sessionId\": \"u90r8tuegw-r908\",\n        \"channel\": \"TOBI\",\n        \"intent\": \"test-intent\",\n        \"dataRequired\": true\n    },\n    \"data\": {\n        \"accno\": \"7001229213\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{tomcat8-ds-tobi-dev}}/ds-cdm-aggregator-webapi-1.0.18/aggregate/cdm/accno/7001229213",
+							"host": [
+								"{{tomcat8-ds-tobi-dev}}"
+							],
+							"path": [
+								"ds-cdm-aggregator-webapi-1.0.18",
+								"aggregate",
+								"cdm",
+								"accno",
+								"7001229213"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "tomcat8-ds-tobi-dev",
+			"value": "https://aepksmxaod004-vlan400.vfl.vodafone:9097",
+			"type": "string"
+		}
+	]
+}

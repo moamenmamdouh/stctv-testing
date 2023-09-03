@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "d010c72a-2f89-48c1-b6a2-2dc2f1750313",
+		"name": "ds-tobi-identify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4131763"
+	},
+	"item": [
+		{
+			"name": "1.1.20",
+			"item": [
+				{
+					"name": "ctn/{ctn}/authorised",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"context\":{\n    \"sessionId\":\"u90r8tuegw-r908\",\n    \"intent\":\"test-intent\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{tomcat8-ds-tobi-dev}}/ds-tobi-identify-webapi-1.1.20/identify/ctn/447867789384/authorised",
+							"host": [
+								"{{tomcat8-ds-tobi-dev}}"
+							],
+							"path": [
+								"ds-tobi-identify-webapi-1.1.20",
+								"identify",
+								"ctn",
+								"447867789384",
+								"authorised"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "tomcat8-ds-tobi-dev",
+			"value": "https://aepksmxaod004-vlan400.vfl.vodafone:9097",
+			"type": "string"
+		}
+	]
+}
