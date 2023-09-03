@@ -1,0 +1,14 @@
+Hello,
+I'm Moamen Mamdouh, a Senior testing engineer working currently at VOIS (Vodafone Intelligent Solutions).
+I have been in software field for more than 4 years,  and I believe that I had a noticable impact in all positions I occupied throughout my career.
+I'm currently working in telecommunication industry as a part of IVR squad at VOIS acting as squad testing SPOC with two junior testing engineers, and also supporting TOBi's chatbot squad.
+We are working in a SAfe agile environment, and my role includes creating test plans, preparing test  data, executing test cases on multiple available environments.
+I'm working on our test automation framework as well, creating test scripts for new features, maintaining regression suites for existing features and supporting junior engineers in case of need.
+Before that I was working as a QA engineer at noon, mainly working on seller applications including seller lab, onboarding application, and pre orders application.
+I was part of testing hiring team, and I conducted many knowledge transfer sessions to stakeholders beside the regular QA engineer tasks.
+I gained knowledge in E-commerce field and worked in an agile kanban team.
+I'm a quick learner, flexible, and extremely adaptable based on business needs with high effeciency in minimum time to provide the optimum benefit for users.
+I look to this vacancy at CAFU as a great opportunity to add to my experience, and to provide value with all the things that I gained throughout my whole software journey.
+I didn't speak much about my technical skills as I know they are already mentioned in my CV, so I tried to let you know a little bit about my career that you might not able to see on my CV.
+Looking forward to talk to you more and good luck.
+Best Regards.
